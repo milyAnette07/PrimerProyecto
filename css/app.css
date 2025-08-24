@@ -1,5 +1,18 @@
 /*reglas generales*/
 
+.playfair-fontPlayFair> {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.color-Producto {
+    background: blue;
+}
+
 /*Media Query*/
 
 /** Reescribir colores */
