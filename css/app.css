@@ -1,18 +1,41 @@
 /*reglas generales*/
-
-.playfair-fontPlayFair> {
-    font-family: "Playfair", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+*
+{
+    font-size: 16.5px;
+}
+h1 span{
+    color: #037BC0;
 }
 
+body{
+    font-family: "Raleway", sans-serif;
+    line-height: 2;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1 h2 h3{
+     font-family: "Playfair", serif;
+}
+h1{
+    font-size: 5rem;
+}
+h2 h3{
+    font-size: 4cqmin;
+}
+.hero{
+    background-image: url('../images/principal.jpg');
+    width: 25rem;
+}
 .color-Producto {
     background: blue;
+    background-size: cover;
 }
-
+nav ul{
+    display: flex;
+    list-style: none;
+}
 /*Media Query*/
 
 /** Reescribir colores */
