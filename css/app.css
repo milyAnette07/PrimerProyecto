@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-h1 span {
+ span {
     color: #037BC0;
 }
 
@@ -14,15 +14,15 @@ body {
 }
 
 img {
-    width: 50%;
+    width:100%;
     height: auto;
 }
 
-h1 h2 h3 {
+h1 h2 h3 span {
     font-family: "Playfair", serif;
 }
 
-h1 {
+h1 span{
     font-size: 5rem;
 }
 
@@ -70,9 +70,38 @@ section h2 {
     text-align: center;
     max-width: 100%;
 }
-.Producto1
+
+.Producto1 article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.imagenP1 img {
+    grid-column-start: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#descP1 {
+    grid-column-start: 2;
+}
+.Producto2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Producto2 img {
+    gap: 2rem;
+    border-radius: 4px;
+}
+.Productos456
 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Categorias
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
