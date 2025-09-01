@@ -5,7 +5,7 @@
 }
 
 h1 ,span {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 span {
@@ -27,11 +27,13 @@ h1 h2 h3 span {
 }
 
 h2 h3 {
-    font-size: 4cqmin;
+    font-size: 4rem;
 }
-
+p{
+    justify-content: center;
+}
 .color-Producto {
-    background: blue;
+    background: #0078D7;
     background-size: cover;
 }
 
@@ -39,8 +41,17 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #0078D7;
+    margin: 0px;
+    
 }
+.menu li a{
+   margin: 4px;
+   padding: 4px;
+   text-decoration: none;
+   color: white;
+} 
 
 .hero {
     background-repeat: no-repeat;
@@ -74,41 +85,45 @@ section h2 {
 
 .Producto1 article {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 2rem;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
 }
 
 .imagenP1 img {
     grid-column-start: 1;
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: auto;    
 }
 
 #descP1 {
     grid-column-start: 2;
+    background-color: #0078D7; 
+    color: white;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
 }
 
 .Renglon6 {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 1rem;
+    /* gap: 1rem; */
     margin-bottom: 20px;
 }
 
 .Renglon6 img {
     gap: 2rem;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .producto3 article {
-    gap: 2rem;
-    border-radius: 4px;
+    /* gap: 2rem; */
+    /* border-radius: 4px; */
     margin-bottom: 20px;
 }
 
-.Productos456 {
+.Renglon7 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
