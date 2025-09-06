@@ -43,3 +43,10 @@ if(modalImagen) {
         }, false)
       })
   })()
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const menuWrapper = document.querySelector('.menu-wrapper');
+
+  toggleBtn.addEventListener('click', () => {
+    menuWrapper.classList.toggle('active');
+  });
+
