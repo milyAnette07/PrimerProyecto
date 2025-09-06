@@ -45,53 +45,56 @@ p {
 }
 
 #navmenu {
-    background-color: #0078D7;
-    color: white;
+    background-color: #0078D7;/*Color fondo del navmanu*/
+    color: white;/*Color  de letra blanco*/
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1rem;
-    flex-wrap: wrap;
+    /*Clase para el div*/
+    display: flex; /* Activa Flexbox para organizar los hijos en fila (logo, botón, menú) */
+    justify-content: space-between; /* Deja espacio máximo entre los elementos (logo a la izquierda, menú a la derecha) */
+    align-items: center;  /* Alinea los hijos verticalmente al centro */
+    padding: 0.8rem 1rem; /* Espaciado interno (arriba/abajo = 0.8rem, lados = 1rem) */
+    flex-wrap: wrap; /* Permite que los hijos bajen de línea si no caben (responsive) */
 }
 
 .brand {
-    flex: 1;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    text-align: left;
+    /*Clase para el Logo*/
+    flex: 1; /* Ocupa 1 parte proporcional del espacio disponible */
+    font-size: 1.4rem; /* Tamaño de letra del logo */
+    font-weight: bold;  /* Texto en negrita */
+    color: white; /* Color de letra blanco */
+    text-decoration: none; /* Quita el subrayado  de los enlaces */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .toggle-btn {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: none;
+     /*Clase para el boton hamburguesa*/
+    font-size: 1.5rem; /* Tamaño del icono */
+    background: none; /* Sin fondo */
+    border: none; /* Quita el borde del botón */
+    color: white; /* El icono será blanco */
+    cursor: pointer; /* El cursor cambia a manita al pasar encima */
+    display: none; /* Oculto en escritorio; solo se muestra en móviles con @media */
 }
 
 .menu-wrapper {
-    flex: 2;
-    display: flex;
+    flex: 2; /* Ocupa el doble de espacio que el logo (se expande más) */
+    display: flex; /*  organiza el ul y formulario en la misma línea */
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem; /* Espacio entre el ul y el buscador */
 }
 
 .menu {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    display: flex; /* Los <li> se ponen en fila en lugar de columna */
+    list-style: none; /* Quita los puntos o viñetas de la lista */
+    gap: 1.5rem; /* Son espacios entre cada <li> */
 }
 
 .menu li a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  /* Quita el subrayado  de los enlaces */
+    color: white; /* Color de letra blanco */
     padding: 0.4rem 0.6rem;
     transition: background 0.3s;
 }
@@ -118,6 +121,7 @@ p {
 
 
 .hero-image {
+     /*Clase para la imagen*/
     min-height: 40rem;
     background-image: url(../images/principal.jpg);
     background-repeat: no-repeat;
@@ -127,6 +131,7 @@ p {
 }
 
 .hero-image div {
+      /*Clase para cambiar color de fondo de las letras sobre la imagen*/
     min-height: inherit;
     display: flex;
     justify-content: center;
@@ -134,11 +139,6 @@ p {
     background-color: #3a3b8c71;
     color: white;
     font-size: 4rem;
-}
-
-.subTitulos {
-    text-align: center;
-    max-width: 100%;
 }
 
 .Producto1 article {
@@ -376,7 +376,11 @@ p {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
     /* Para la sombra */
 }
-
+#subTitulos {
+       /*id para el texto de Categorias*/
+    text-align: center;
+    max-width: 100%;
+}
 .Categorias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -392,8 +396,8 @@ p {
 }
 
 .Categorias article:hover {
-    transform: scale(1.02);
-}
+    transform: scale(1.02); /* Escala el elemento un 2% más grande */
+} 
 
 .Categorias img {
     width: 100%;
