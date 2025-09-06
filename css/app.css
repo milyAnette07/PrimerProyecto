@@ -117,16 +117,23 @@ p {
 
 
 
-.hero {
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
-    align-items: center;
-    margin: 4px;
+.hero-image {
+   min-height: 40rem;
+   background-image: url(../images/principal.jpg);
+   background-repeat: no-repeat; 
     background-size: cover;
     background-position: 100% 90%;
-}
 
+}
+.hero-image div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#3a3b8c71;
+    color: white;
+    font-size: 4rem;
+}
 .subTitulos {
     text-align: center;
     max-width: 100%;
@@ -474,6 +481,22 @@ footer {
     .footer-columns {
         grid-template-columns: 1fr;
     }
+     /* Ajustar Hero */
+     .hero-image {
+        min-height: 20rem; /* más pequeño en móvil */
+        background-position: center; /* centramos la imagen */
+    }
+
+    .hero-image div {
+        font-size: 2rem; /* reducir tamaño del texto */
+        text-align: center; /* centrar texto */
+        padding: 1rem; /* evitar que se pegue a los bordes */
+    }
+
+    .hero-image h2 {
+        font-size: 1.8rem; /* aún más pequeño para pantallas muy chicas */
+        line-height: 1.2;
+    }
 
     /* Ajustar imágenes */
     .producto2 img,
@@ -569,4 +592,70 @@ footer {
         /* opcional */
     }
 
+}
+@media (max-width: 480px) {
+    /* Hero aún más compacto */
+    .hero-image {
+        min-height: 15rem;
+        background-position: center;
+    }
+
+    .hero-image div {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .hero-image h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Navegación más cómoda en móvil */
+    .toggle-btn {
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        gap: 0.5rem;
+    }
+
+    /* Ajustar columnas */
+    .Renglon6,
+    .Renglon7,
+    .Categorias,
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 1rem; /* menos espacio en móviles */
+    }
+
+    /* Imágenes de productos más pequeñas */
+    .producto2 img,
+    .producto3 img,
+    .producto4 img,
+    .producto5 img,
+    .producto6 img,
+    .imagenP1 img {
+        max-height: 250px;
+    }
+
+    /* Texto de productos más compacto */
+    .producto2 p,
+    .producto3 p,
+    .producto4 p,
+    .producto5 p,
+    .producto6 p,
+    #descP1 p {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    /* Botones más chicos */
+    #descP1 button,
+    .producto2 button,
+    .producto3 button,
+    .producto4 button,
+    .producto5 button,
+    .producto6 button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
